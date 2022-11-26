@@ -8,37 +8,24 @@
 
 int main(){
   char n;
-  int 
-  printf("Escolha uma opção:\nA)Casos Acumulados\nB)Casos Novos\nC)Obitos Acumulados\nD)Obitos Novos\n");
+  int dia,mes;
+  int jan[31]={3986,1721,11850,18759,27267,35826,63292,49303,24382,34788,70765,87471,97986,112286,48520,};
+  printf("Escolha uma opção:\nA)Casos Novos\nB)Obitos Novos\n");
   scanf("%c", &n);
   switch(n){
     case 'A':
-      printf("De que Mês e Dia você gostaria de ver os Casos Acumulados?");
-      scanf("%d %d",);
-      
-      
+      printf("De que Mês e Dia você gostaria de ver os Casos Acumulados?\n");
+      scanf("%d %d",&mes,&dia);
+      casosNovos(mes,dia);
     break;
-    
     case 'B':
 
     break;
 
-    case 'C':
-
-    break;
-
-
-    case 'D':
-
-    break;
   default:
     printf("Digite um caracter válido!");
     break;
   }
   
-  
-
-
-
   return 0;
 }
