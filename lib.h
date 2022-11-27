@@ -1,2 +1,2 @@
-void Hello();
+void obitosNovos();
 void casosNovos();

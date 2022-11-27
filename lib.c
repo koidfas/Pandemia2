@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "lib.h"
 
+
+void obitosNovos(int mes, int dia ){
+
+  
+}
+
+
+void casosNovos(int mes, int dia ){
 int jan[31]={3986,1721,11850,18759,27267,35826,63292,49303,24382,
 34788,70765,87471,97986,112286,48520,24934,74134,137103,204854,
 168495,166539,157393,135080,83340,183722,224567,228954,269968,
@@ -31,29 +39,20 @@ int jun[30]={40979,41273,36189,15590,6266,35783,71045,
 28672,20127,10691,50272,64362,71906,72049,60384,38793,
 16679,51678,76638,75925,75139};
 
-
-void Hello(){
-  printf("Hello, World!");
-
-}
-
-void casosNovos(int mes, int dia ){
-  switch (mes){
+// Escrever uma func que pega o switch case e utilizar nas duas func (casosNovos e obitosNovos)
+switch (mes){
   case 1:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
+      if (a == dia){
         printf("Casos Novos do : %d",jan[i]);
       }
-      
     }
     break;
   case 2:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
+      if (a == dia){
         printf("Casos Novos do : %d",fev[i]);
       }  
     }
@@ -61,8 +60,7 @@ void casosNovos(int mes, int dia ){
   case 3:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
+      if (a == dia){
         printf("Casos Novos do : %d",mar[i]);
       }   
     }
@@ -70,37 +68,29 @@ void casosNovos(int mes, int dia ){
   case 4:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
-        printf("Casos Novos do : %d",abr[i]);
+      if (a == dia){
+        printf("Casos Novos do: %d",abr[i]);
       }
     }
     break;
   case 5:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
-        printf("Casos Novos do : %d",mai[i]);
+      if (a == dia){
+        printf("Casos Novos do: %d",mai[i]);
       }
     }
     break;
   case 6:
     for (int i = 0; i < dia; i++){
       int a = i + 1;
-      if (a == dia)
-      {
-        printf("Casos Novos do : %d",jun[i]);
+      if (a == dia){
+        printf("Casos Novos do: %d",jun[i]);
       }
-      
     }
     break;
   default:
     printf("Mes invalido!");
     break;
   }
-
-
 }
-
-

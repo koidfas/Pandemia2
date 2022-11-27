@@ -18,7 +18,9 @@ int main(){
       casosNovos(mes,dia);
     break;
     case 'B':
-
+      printf("De que Mês e Dia você gostaria de ver os Casos Acumulados?\n");
+      scanf("%d %d",&mes,&dia);
+      obitosNovos(mes, dia);
     break;
 
   default:
