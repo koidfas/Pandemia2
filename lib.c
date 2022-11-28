@@ -62,83 +62,47 @@ int obitosAcumulados(){
 void obitosNovos(int mes, int dia ){
 switch (mes){
   case 1:
-    if (dia > 31){
-      printf("Digite um dia válido!");
-      break;
-    }else{
-      for (int i = 0; i < dia; i++){
-        int a = i + 1;
-        if (a == dia){
-          printf("No mês de Janeiro foram contabilizados %d de obitos!",jan_on[i]);
-      }
-    }
+  if (dia > 31){
+    printf("Digite um dia válido!");
     break;
   }
+    printf("No mês de Janeiro foram contabilizados %d de obitos!",jan_on[dia-1]);
+    break;
   case 2:
   if (dia > 28){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){  
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Feveveiro foram contabilizados %d de casos!",fev_on[i]);
-      }  
-    }
   }
+    printf("No mês de Feveveiro foram contabilizados %d de casos!",fev_on[dia-1]); 
     break;
   case 3:
   if (dia > 31){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Março foram contabilizados %d de casos!",mar_on[i]);
-      }   
-    }
-    break;
   }
+    printf("No mês de Março foram contabilizados %d de casos!",mar_on[dia-1]);
+    break;
   case 4:
   if (dia > 30){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Abril foram contabilizados %d de casos!",abr_on[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Abril foram contabilizados %d de casos!",abr_on[dia-1]);
+    break;
   case 5:
   if (dia > 31){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Maio foram contabilizados %d de casos!",mai_on[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Maio foram contabilizados %d de casos!",mai_on[dia-1]);
+    break;
   case 6:
   if (dia > 30){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Junho foram contabilizados %d de casos!",jun_on[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Junho foram contabilizados %d de casos!",jun_on[dia-1]);
+    break;
   default:
     printf("Mes invalido!");
     break;
@@ -152,80 +116,44 @@ switch (mes){
   if (dia > 31){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Janeiro foram contabilizados %d de casos!",jan_cn[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Janeiro foram contabilizados %d de casos!",jan_cn[dia-1]);
+    break;
   case 2:
   if (dia > 28){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Fevereiro foram contabilizados %d de casos! %d",fev_cn[i]);
-      }  
-    }
-    break;
   }
+    printf("No mês de Fevereiro foram contabilizados %d de casos! %d",fev_cn[dia-1]);
+    break;
   case 3:
   if (dia > 31){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Março foram contabilizados %d de casos!",mar_cn[i]);
-      }   
-    }
-    break;
   }
+    printf("No mês de Março foram contabilizados %d de casos!",mar_cn[dia-1]);
+    break;
   case 4:
   if (dia > 30){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Abril foram contabilizados %d de casos!",abr_cn[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Abril foram contabilizados %d de casos!",abr_cn[dia-1]);
+    break;
   case 5:
   if (dia > 31){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Maio foram contabilizados %d de casos!",mai_cn[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Maio foram contabilizados %d de casos!",mai_cn[dia-1]);
+    break;
   case 6:
   if (dia > 30){
     printf("Digite um dia válido!");
     break;
-  }else{
-    for (int i = 0; i < dia; i++){
-      int a = i + 1;
-      if (a == dia){
-        printf("No mês de Junho foram contabilizados %d de casos!",jun_cn[i]);
-      }
-    }
-    break;
   }
+    printf("No mês de Junho foram contabilizados %d de casos!",jun_cn[dia-1]);
+    break;
   default:
     printf("Mes invalido!");
     break;

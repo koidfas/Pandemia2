@@ -5,13 +5,11 @@
 // E o programa vai ter func que pega informação de casos e faça o print das informações na tela ou calcula algo!
 // O programa vai começar com um switch stat que vai selecionar as opções do prog 
 //
-
 int main(){
   char n;
   int dia,mes;
   printf("Escolha uma opção:\nA)Casos Novos\nB)Obitos Novos\nC)Casos Acumulados(Dentre dos 6 meses)\nD)Obitos Acumulados(Dentro dos 6 meses)\n");
   scanf("%c", &n);
-  Upper(n);
   switch(n){
     case 'A':
       printf("De que Mês e Dia você gostaria de ver os Casos Novos?(Mês em forma de número!)\n");
