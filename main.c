@@ -9,18 +9,26 @@
 int main(){
   char n;
   int dia,mes;
-  printf("Escolha uma opção:\nA)Casos Novos\nB)Obitos Novos\n");
+  printf("Escolha uma opção:\nA)Casos Novos\nB)Obitos Novos\nC)Casos Acumulados(Dentre dos 6 meses)\nD)Obitos Acumulados(Dentro dos 6 meses)\n");
   scanf("%c", &n);
+  Upper(n);
   switch(n){
     case 'A':
-      printf("De que Mês e Dia você gostaria de ver os Casos Acumulados?\n");
+      printf("De que Mês e Dia você gostaria de ver os Casos Novos?(Mês em forma de número!)\n");
       scanf("%d %d",&mes,&dia);
       casosNovos(mes,dia);
     break;
     case 'B':
-      printf("De que Mês e Dia você gostaria de ver os Casos Acumulados?\n");
+      printf("De que Mês e Dia você gostaria de ver os Obitos Novos?(Mês em forma de número!)\n");
       scanf("%d %d",&mes,&dia);
       obitosNovos(mes, dia);
+    break;
+    case 'C':
+      printf("Dentro desses 6 meses teve  %d Casos!", casosAcumulados());
+    break;
+
+    case 'D':
+
     break;
 
   default:
