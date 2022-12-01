@@ -2,6 +2,9 @@
 #include "lib.h"
 
 // Vetores com dados dos Obitos e Casos Novos para todas funções acessarem
+
+// Obitos Novos
+
 int jan_on[31]={49,28,76,175,129,128,181,115,44,110,147,133,174,251,175,
 74,121,351,338,350,358,238,296,259,487,570,672,799,640,330,284};
 
@@ -19,6 +22,8 @@ int mai_on[31]={16,89,92,65,137,195,35,13,53,198,126,125,139,92,46,69,229,103,
 
 int jun_on[30]={125,127,43,26,8,36,307,299,143,170,114,36,70,174,339,151,72,94,
 55,96,229,140,365,334,140,36,127,316,277,291};
+
+// Casos Novos
 
 int jan_cn[31]={3986,1721,11850,18759,27267,35826,63292,49303,24382,
 34788,70765,87471,97986,112286,48520,24934,74134,137103,204854,
@@ -57,6 +62,24 @@ int casosAcumulados(){
 
 int obitosAcumulados(){
     return 671416;
+}
+
+void media_movel(int mes, int dia_comeco, int dia_final,float *ptr){
+  // *ptr = 100.5;
+switch (mes){
+  case 1:
+    float soma=0,cont=0;
+    for (int i = dia_comeco - 1; i < dia_final; i++) {
+      soma = soma + jan_on[i];
+      cont++;
+    }
+    *ptr = soma / cont;
+    break;
+
+  default:
+    printf("Tu fez merda!");
+    break;
+  }
 }
 
 void obitosNovos(int mes, int dia ){
