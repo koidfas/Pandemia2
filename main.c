@@ -3,7 +3,7 @@
 #include "lib.h"
 
 int main(){
-  // Another switch statement!
+  // Another switch statement appears!
   // Vars que vão ser usadas durante o switch
   // O switch aqui é basicamente um sistema de menus!
   char n;
