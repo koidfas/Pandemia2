@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "lib.h"
 
+// Tudo está salvo no meu github: github.com/koidfas/Pandemia2
+
 int main(){
   // Another switch statement appears!
   // Vars que vão ser usadas durante o switch
